@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>乐众商城</title>
+	<link rel="stylesheet" href="css/tool.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index-x.js"></script>
+	<style>
+		::-webkit-input-placeholder{
+			color: #cccccc;
+		}
+		:-moz-placeholder {
+			color: #cccccc;
+		} 
+		::-moz-placeholder {
+			color: #cccccc;
+		} 
+		:-ms-input-placeholder {
+			color: #cccccc;
+		} 
+	</style>
+</head>
+<body class="back-color">
+	
+	<!--商家列表-->
+	<div class="bill-top">
+		<div class="bill-top-inner">
+			<div class="return-btn">
+				<span></span>
+				<p>返回</p>
+				<div style="clear: both;"></div><!--clearFloat-->
+			</div>
+			<p class="register-p">必胜客（中山店）</p>
+		</div>
+	</div>
+	<div class="top-space"></div><!--顶部间距-->
+	<!--商家列表-->
+	
+	<!--支付选项-->
+	<div class="pay-select">
+		<form action="" name="" method="post">
+			<div class="pay-money">
+				<div class="pay-money-inner">
+					<div class="pay-money-txt">需支付</div>
+					<div class="pay-money-input">
+						<input type="text" value="￥100" readonly="readonly"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="pay-way">选择支付方式</div>
+			
+			<div class="pay-way-select">
+				<ul>
+					<li class="balance-pay">
+						<div class="balance-icon">
+							<span><img src="img/icon61.png"></span>
+						</div>
+						
+						<div class="balance-name">余额支付</div>
+						
+						<div class="balance-sele">
+							<span class="radio-back"></span>
+							<input type="radio" name="balance"/>
+						</div>
+					</li>
+					
+					<div class="fg-line" style="margin: 0.2rem 0 0.2rem 0;"></div><!--分隔线-->	
+					
+					<li class="balance-pay">
+						<div class="balance-icon">
+							<span><img src="img/icon62.png"></span>
+						</div>
+						
+						<div class="balance-name">微信支付</div>
+						
+						<div class="balance-sele">
+							<span class="radio-back"></span>
+							<input type="radio" name="balance"/>
+						</div>
+					</li>
+					
+					<div class="fg-line" style="margin: 0.2rem 0 0.2rem 0;"></div><!--分隔线-->	
+					
+					<li class="balance-pay">
+						<div class="balance-icon">
+							<span><img src="img/icon63.png"></span>
+						</div>
+						
+						<div class="balance-name">支付宝支付</div>
+						
+						<div class="balance-sele">
+							<span class="radio-back"></span>
+							<input type="radio" name="balance"/>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="ensure">
+				<button type="button">确定</button>
+			</div>
+		</form>
+	</div>
+	<!--支付选项-->
+	
+	
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+	//支付选项
+	$(".balance-sele input").click(function(){
+		var par = $(this).parents(".balance-pay");
+		var sib = $(par).siblings(".balance-pay");
+		
+		$(this).siblings(".radio-back").addClass("active");
+		$(sib).find(".radio-back").removeClass("active");
+
+	});
+	</script>
+</body>
+</html>

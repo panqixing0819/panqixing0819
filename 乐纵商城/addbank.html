@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>乐众商城</title>
+	<link rel="stylesheet" href="css/tool.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index-x.js"></script>
+	<style>
+		::-webkit-input-placeholder{
+			color: #cccccc;
+		}
+		:-moz-placeholder {
+			color: #cccccc;
+		} 
+		::-moz-placeholder {
+			color: #cccccc;
+		} 
+		:-ms-input-placeholder {
+			color: #cccccc;
+		} 
+	</style>
+</head>
+<body class="back-color">
+	
+	<!--商家列表-->
+	<div class="bill-top">
+		<div class="bill-top-inner">
+			<div class="return-btn">
+				<span></span>
+				<p>返回</p>
+				<div style="clear: both;"></div><!--clearFloat-->
+			</div>
+			<p class="register-p">添加银行卡</p>
+		</div>
+	</div>
+	<div class="top-space"></div><!--顶部间距-->
+	<!--商家列表-->
+	
+	<!--添加银行卡信息-->
+	<form action="" name="" method="post">
+		<div class="subjoin">
+		
+			<ul class="subjoin-ul">
+				<li class="subjoin-li">
+					<div class="subjoin-type">开户姓名：</div>
+					<div class="subjoin-input">
+						<input type="text" placeholder="请输入持卡人姓名"/>
+					</div>
+				</li>
+				
+				<div class="fg-line line-height"></div><!--分割线-->
+				<li class="subjoin-li">
+					<div class="subjoin-type">银行卡号：</div>
+					<div class="subjoin-input">
+						<input type="number" placeholder="请输入银行卡卡号" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+					</div>
+				</li>
+			</ul>
+			
+		</div>
+		
+		<div class="add-IP-btn">
+			<a href="addbank2.html">
+			<button type="button">下一步</button>
+			</a>
+		</div>
+	</form>
+	<!--添加银行卡信息-->
+	
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>

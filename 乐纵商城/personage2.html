@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>乐众商城</title>
+	<link rel="stylesheet" href="css/tool.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index-x.js"></script>
+	<style>
+		::-webkit-input-placeholder{
+			color: #cccccc;
+		}
+		:-moz-placeholder {
+			color: #cccccc;
+		} 
+		::-moz-placeholder {
+			color: #cccccc;
+		} 
+		:-ms-input-placeholder {
+			color: #cccccc;
+		} 
+	</style>
+</head>
+<body>
+	
+	<!--商家列表-->
+	<div class="bill-top">
+		<div class="bill-top-inner">
+			<div class="return-btn">
+				<span></span>
+				<p>返回</p>
+				<div style="clear: both;"></div><!--clearFloat-->
+			</div>
+			<p class="register-p">个人信息</p>
+			<div class="detail"><button type="button">保存</button></div>
+		</div>
+	</div>
+	<div class="top-space"></div><!--顶部间距-->
+	<!--商家列表-->
+	
+	<!--个人信息-->
+	<div class="message-box">
+		
+		<div class="message-inner-box click-shade">
+			<div class="message-inner-left txt-height">头像</div>
+			<div class="message-inner-right">
+				<span class="person-photo">
+					<img src="img/icon73.png">
+				</span>
+			</div>
+		</div>
+		
+		<div class="fg-line"></div><!--分隔线-->
+		<div class="message-inner-box">
+			<div class="message-inner-left">用户名</div>
+			<div class="message-inner-right">
+				<div class="message-input">
+					<input type="text" value="" placeholder="请输入用户名"/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="fg-line"></div><!--分隔线-->
+		<div class="message-inner-box">
+			<div class="message-inner-left">手机号</div>
+			<div class="message-inner-right">
+				<div class="message-input">
+					<input type="number" value="" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="请输入手机号"/>
+				</div>
+			</div>
+		</div>
+		<div class="fg-line"></div><!--分隔线-->
+		
+	</div>
+	<!--个人信息-->
+	
+	<!--相机弹出层-->
+	<div class="camera-box">
+		<div class="camera-inner-box">
+			
+			<div class="camera-file">
+				<button class="camera-btn" type="button">拍照</button>
+				<div class="fg-line"></div><!--分隔线-->
+				<div class="camera-file-input">
+					<input type="file"/>
+					<span>从手机相册中选择</span>
+				</div>
+			</div>
+			
+			<button class="abolish-btn" type="button">取消</button>
+		</div>
+	</div>
+	<!--相机弹出层-->
+	
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>

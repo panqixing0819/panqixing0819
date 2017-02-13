@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>乐众商城</title>
+	<link rel="stylesheet" href="css/tool.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index-x.js"></script>
+	<style>
+		::-webkit-input-placeholder{
+			color: #cccccc;
+		}
+		:-moz-placeholder {
+			color: #cccccc;
+		} 
+		::-moz-placeholder {
+			color: #cccccc;
+		} 
+		:-ms-input-placeholder {
+			color: #cccccc;
+		} 
+	</style>
+</head>
+<body class="back-color">
+	
+	<!--商家列表-->
+	<div class="bill-top">
+		<div class="bill-top-inner">
+			<div class="return-btn">
+				<span></span>
+				<p>返回</p>
+				<div style="clear: both;"></div><!--clearFloat-->
+			</div>
+			<p class="register-p">提现</p>
+		</div>
+	</div>
+	<div class="top-space"></div><!--顶部间距-->
+	<!--商家列表-->
+	
+	<!--选择银行卡提现-->
+	<div class="select-bank">
+		<ul>
+			<a href="bankcard.html">
+				<li class="select-bank-li">
+					<div class="select-bank-img">
+						<span><img src="img/icon82.png"></span>
+					</div>
+					
+					<div class="select-bank-txt">
+						<p>中国建设银行</p>
+						<p>尾号8888<span>快捷</span></p>
+					</div>
+					
+					<div class="select-bank-icon">
+						<span></span>
+					</div>
+				</li>
+			</a>
+		</ul>
+	</div>
+	
+	<div class="reminder">
+		00：00：00-23：59：59期间转出，最快2小时到账
+	</div>
+	<!--选择银行卡提现-->
+	
+	<!--提现/明细-->
+	<form action="" name="" method="post">
+		<div class="deposit">
+			<div class="deposit-title">金额</div>
+			<div class="deposit-input">
+				<input type="number" placeholder="请输入提现金额" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+			</div>
+		</div>
+		
+		<div class="reminder">当前余额：<span>￥12000000</span></div>
+		
+		<div class="add-IP-btn">
+			<button type="button">提交</button>
+		</div>
+		
+		<div class="pay-passwrod"><!--支付密码-->
+			<div class="pay-passwrod-inner">
+				<div class="six-number">
+					<p>请输入6位数字支付密码</p>
+					<div class="six-number-input">
+						<input type="password" maxlength="1" readonly="readonly"/>
+						<input type="password" maxlength="1" readonly="readonly"/>
+						<input type="password" maxlength="1" readonly="readonly"/>
+						<input type="password" maxlength="1" readonly="readonly"/>
+						<input type="password" maxlength="1" readonly="readonly"/>
+						<input type="password" maxlength="1" readonly="readonly"/>
+					</div>
+					
+					<div class="six-number-btn">
+						<button type="button" value="1">1</button>
+						<button type="button" value="2">2</button>
+						<button type="button" value="3">3</button>
+						<button type="button" value="4">4</button>
+						<button type="button" value="5">5</button>
+						<button type="button" value="6">6</button>
+						<button type="button" value="7">7</button>
+						<button type="button" value="8">8</button>
+						<button type="button" value="9">9</button>
+						<button type="button" disabled="disabled"></button>
+						<button type="button" value="0">0</button>
+						<button type="button" disabled="disabled"></button>
+					</div>
+					<div style="clear: both;"></div><!--clearFloat-->
+					
+					<div class="submit-btn">
+						<button class="submit-btn1" type="button">确定</button>
+						<button class="submit-btn2" type="button">取消</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</form>
+	<!--提现/明细-->
+	
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>

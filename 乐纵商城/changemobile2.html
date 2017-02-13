@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>乐众商城</title>
+	<link rel="stylesheet" href="css/tool.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index-x.js"></script>
+	<style>
+		::-webkit-input-placeholder{
+			color: #cccccc;
+		}
+		:-moz-placeholder {
+			color: #cccccc;
+		} 
+		::-moz-placeholder {
+			color: #cccccc;
+		} 
+		:-ms-input-placeholder {
+			color: #cccccc;
+		} 
+	</style>
+</head>
+<body>
+	
+	<!--商家列表-->
+	<div class="bill-top">
+		<div class="bill-top-inner">
+			<div class="return-btn">
+				<span></span>
+				<p>返回</p>
+				<div style="clear: both;"></div><!--clearFloat-->
+			</div>
+			<p class="register-p">更换手机</p>
+		</div>
+	</div>
+	<div class="top-space"></div><!--顶部间距-->
+	<!--商家列表-->
+	
+	<!--更换手机-->
+	<div class="safetyset">
+		<div class="state-colunm">
+			<div class="state-colunm-txt active">
+				<span>1</span>
+				<p>验证手机</p>
+			</div>
+			
+			<div class="state-colunm-line">
+				<span class="interval-one active"></span>
+				<span class="interval-two active"></span>
+			</div>
+			
+			<div class="state-colunm-txt active">
+				<span>2</span>
+				<p>更换手机</p>
+			</div>
+			
+			<div class="state-colunm-line">
+				<span class="interval-one active"></span>
+				<span class="interval-two"></span>
+			</div>
+			
+			<div class="state-colunm-txt">
+				<span>3</span>
+				<p>完成</p>
+			</div>
+		</div>
+	</div>
+	<div class="divide"></div><!--分隔条-->
+	<!--更换手机-->
+	
+	<!--更换手机-->
+	<form action="" name="" method="post">
+		<div class="mobile-box">
+			<div class="mobile-icon">
+				<span><img src="img/icon87.png"></span>
+			</div>
+			<div class="mobile-input">
+				<input type="number" placeholder="请输入新手机号"
+				onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+			</div>
+		</div>
+		
+		<div class="mobile-box">
+			<div class="mobile-icon">
+				<span><img src="img/icon88.png"></span>
+			</div>
+			<div class="mobile-input">
+				<input type="text" placeholder="请输入短信验证码"/>
+			</div>
+			
+			<div class="mobile-verify">
+				<input type="button" id="btn" onclick="settime(this)" value="获取验证码">
+			</div>
+		</div>
+		
+		<a href="changemobile3.html">
+		<div class="lobile-btn">
+			<button type="button">提交</button>
+		</div>
+		</a>
+	</form>
+	<!--更换手机-->
+	
+	
+	
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script type="text/javascript"> 
+	var countdown=60; 
+	function settime(obj) { 
+	    if (countdown == 0) { 
+	        obj.removeAttribute("disabled");    
+	        obj.value="获取验证码"; 
+	        countdown = 60; 
+	        return;
+	    } else { 
+	        obj.setAttribute("disabled", true); 
+	        obj.value= countdown + "秒"; 
+	        countdown--; 
+	    } 
+		setTimeout(function(){settime(obj)},1000); 
+	} 
+</script>
+</body>
+</html>

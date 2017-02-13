@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>乐众商城</title>
+	<link rel="stylesheet" href="css/tool.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index-x.js"></script>
+	<style>
+		::-webkit-input-placeholder{
+			color: #cccccc;
+		}
+		:-moz-placeholder {
+			color: #cccccc;
+		} 
+		::-moz-placeholder {
+			color: #cccccc;
+		} 
+		:-ms-input-placeholder {
+			color: #cccccc;
+		} 
+	</style>
+</head>
+<body class="back-color">
+	
+	<!--商家列表-->
+	<div class="bill-top">
+		<div class="bill-top-inner">
+			<div class="return-btn">
+				<span></span>
+				<p>返回</p>
+				<div style="clear: both;"></div><!--clearFloat-->
+			</div>
+			<p class="register-p">订单支付</p>
+		</div>
+	</div>
+	<div class="top-space"></div><!--顶部间距-->
+	<!--商家列表-->
+	
+	<!--支付成功-->
+	<div class="fail-box active">支付成功</div>
+	
+	<div class="fail-btn">
+		<div class="fail-message">
+			<p>订单编号：00000000</p>
+			<p>支付方式：余额</p>
+			<p>
+				支付时间：2016.11.11<span class="jianju">17:00:00</span>
+			</p>
+		</div>
+		<a class="fail-button" href="index.html">返回首页</a>
+		<a class="fail-a" href="storeorder4.html">查看订单</a>
+		<div style="clear: both;"></div><!--clearFloat-->
+	</div>
+	
+	<div class="shop-evaluate">
+		<div class="shop-evaluate-title">评价该店铺</div>
+		<ul class="shop-evaluate-ul">
+			<li class="shop-evaluate-li">
+				<p class="shop-evaluate-p active">差</p>
+				<span class="shop-evaluate-icon active"></span>
+			</li>
+			
+			<li class="shop-evaluate-li">
+				<p class="shop-evaluate-p">一般</p>
+				<span class="shop-evaluate-icon"></span>
+			</li>
+			
+			<li class="shop-evaluate-li">
+				<p class="shop-evaluate-p">满意</p>
+				<span class="shop-evaluate-icon"></span>
+			</li>
+			
+			<li class="shop-evaluate-li">
+				<p class="shop-evaluate-p">很满意</p>
+				<span class="shop-evaluate-icon"></span>
+			</li>
+			
+			<li class="shop-evaluate-li">
+				<p class="shop-evaluate-p">热推</p>
+				<span class="shop-evaluate-icon"></span>
+			</li>
+		</ul>
+		
+		<div class="shop-evaluate-text">
+			<form action="" name="" method="post">
+			<textarea autofocus="autofocus" placeholder="写下你多此店铺的感受，对别人帮
+助很大哦"></textarea>
+			<button type="button">提交</button>
+			</form>
+		</div>
+	</div>
+	<!--支付成功-->
+	
+	
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		//评价样式
+		$(".shop-evaluate-li").click(function(){
+			$(this).find(".shop-evaluate-p").toggleClass("active");
+			$(this).find(".shop-evaluate-icon").toggleClass("active");
+		});
+	</script>
+</body>
+</html>
